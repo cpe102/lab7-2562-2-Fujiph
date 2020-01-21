@@ -9,7 +9,7 @@ int main () {
     cout << "Input age : ";
     cin >> age;
     if ( age <= 20 ) {
-        cout << "Input your height";
+        cout << "Input your height : ";
         cin >> height;
         if ( height < 160 ) { status = "UNFRIEND"; }
         else if ( height < 175 ) { status = "FRIEND"; }
@@ -20,12 +20,14 @@ int main () {
             else { status = "ONE-NIGHT-STAND"; }
         }
     }
-    else if ( age > 30 ) {
+    else if ( age < 30 ) {
         cout << "How much money do you have? : ";
         cin >> money;
-        if ( money > 10000000 ) { status = "UNFRIEND"; }
+        if ( money > 10000000 ) { status = "BEST FRIEND"; }
         else {
-            status = "BEST FRIEND";
+            status = "UNFRIEND";
         }
-    cout << status;
     }
+    else { status = "UNFRIEND"; }
+    cout << status;
+}

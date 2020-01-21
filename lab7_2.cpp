@@ -4,7 +4,7 @@
 using namespace std;
 
 //[Missing Code 1] Write definition of the function findGrade() here.
-int findGrade ( int score ) {
+char findGrade ( int score ) {
 	if ( score > 90 ){
 		return 'A' ;
 	}
